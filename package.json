@@ -1,0 +1,25 @@
+{
+  "name": "TextSupport",
+  "version": "1.0.0",
+  "description": "TextSupport\r ===========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jasonalmaturner/TextSupport"
+  },
+  "author": "Jason Turner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonalmaturner/TextSupport/issues"
+  },
+  "homepage": "https://github.com/jasonalmaturner/TextSupport",
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "express": "^4.9.7",
+    "firebase": "^1.1.2",
+    "twilio": "^1.7.0"
+  }
+}
