@@ -16,4 +16,4 @@ var server = app.listen(9001, function() {
 	console.log('TextSupport app listening at http://%s:%s', host, port);
 })
 
-var myFirebaseRef = new Firebase("https://text-support-9001.firebaseio.com/");
+// var myFirebaseRef = new Firebase("https://text-support-9001.firebaseio.com/");

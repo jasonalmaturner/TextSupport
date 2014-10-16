@@ -8,7 +8,7 @@ app.config(['$routeProvider', function($routeProvider){
 			controller: 'mainCtrl'
 		})
 		.when('/support', {
-			templateUrl: 'templates/support.html',
+			templateUrl: '/templates/support.html',
 			controller: 'supportCtrl'
 		})
 		.otherwise({
