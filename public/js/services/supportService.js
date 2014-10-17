@@ -3,8 +3,8 @@ var app = angular.module('TextSupport');
 app.service('supportService', function($firebase){
 	var firebaseUrl = 'https://text-support-9001.firebaseio.com/';
 
-	this.getTicket = function(userId){
-		return $firebase(new Firebase(firebaseUrl + '/number/from/' + userId));
+	this.getTicket = function(){
+		return $firebase(new Firebase(firebaseUrl + 'number/'));
 	}
 
 })

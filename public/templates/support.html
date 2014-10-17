@@ -2,9 +2,9 @@
 	<h2>Tickets</h2>
 </div>
 <div class='message-container'>
-	<div class='ticket' ng-repeat='key in data'>
-		<span class='from'>{{data.from}}</span>
-		<span class='time-stamp'>{{data.date}}</span>
-		<span class='message'>{{data.message}}</span>
+	<div class='ticket' ng-repeat='(number, val) in firebase'>
+		<span class='from'>{{number}}</span>
+<!-- 		<span class='time-stamp'>{{number.date}}</span> -->
+		<span class='message' ng-repeat='id in val'>{{id.body}}</span>
 	</div>
 </div>
