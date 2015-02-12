@@ -3,8 +3,9 @@
 var express = require('express'),
 	app = express(),
 	Firebase = require('firebase'),
-	twilio = require('twilio')('AC1afc9f309f5920e44ab887af6b56a5dc', '4eccf64cb87fe21c5fd278e0fcc96342'),
-	bodyParser = require('body-parser');
+	twilio = require('twilio')(env.twilioSID, env.twilioAuthToken),
+	bodyParser = require('body-parser'),
+	env = require('env.js');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
